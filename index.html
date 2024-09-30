@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen">
+            <h1>Welcome to the Crossword Puzzle Game</h1>
+            <button id="start-btn">Start</button>
+        </div>
+
+        <div id="level-selection" style="display: none;">
+            <h2>Select a Set of Crosswords</h2>
+            <button class="level-btn" data-set="1">Set 1 - Regional Economic Development</button> <br /> <br />
+            <button class="level-btn" data-set="2">Set 2 - Introduction to International Business</button> <br /> <br />
+            <button class="level-btn" data-set="3">Set 3 - Introduction to Logistic Management</button> <br /> <br />
+            <button class="level-btn" data-set="4">Set 4 - International Marketing</button> <br /> <br />
+            <button class="level-btn" data-set="5">Set 5 - Export and Import Practices</button> <br /> <br />
+        </div>
+        <div id="crossword-container" style="display: none;">
+            <h2 id="crossword-title"></h2>
+            <div id="status-bar">
+                <div id="timer">Time: 00:00</div>
+                <div id="score">Score: 0</div>
+            </div>
+
+            <div id="crossword-grid"></div>
+            <div id="crossword-clue-container">
+                <div id="across-clues">
+                    <h3>Across</h3>
+                    <ul></ul>
+                </div>
+                <div id="down-clues">
+                    <h3>Down</h3>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+    
