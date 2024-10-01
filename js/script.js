@@ -1,6 +1,6 @@
 ﻿const crosswordSets = {
     1: {
-        title: "Regional Economic Developement",
+        title: "Regional Economic Development",
         gridDimensions: { rows: 14, cols: 19 },
         clues: {
             across: [

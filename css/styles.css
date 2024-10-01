@@ -1,6 +1,7 @@
 ﻿body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    background: url('../bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: contain; /* Ensures the image covers the entire background */
     color: #333;
     text-align: center;
     height: 100vh;
