@@ -30,6 +30,16 @@
             { word: "Monetary", startRow: 3, startCol: 8, direction: "down", clueNumber: 9 },
             { word: "NAFTA", startRow: 6, startCol: 12, direction: "down", clueNumber: 10 }
         ],
+        notes: [
+            "Refers to economic integration between countries within a region to facilitate trade, economic cooperation, and collective growth",
+            "This involves trade agreements that reduce barriers such as tariffs and quotas between countries to encourage smoother and more efficient international trade.",
+            "Currency unions, where countries share a common currency, like the Eurozone, to promote economic stability and easier transactions across borders.",
+            "The North American Free Trade Agreement, which promotes free trade between the U.S., Canada, and Mexico by eliminating trade barriers.",
+            "Regional development initiatives are efforts to promote economic growth through infrastructure improvements, financial assistance, and social development programs.",
+            "Investments in infrastructure aim to improve connectivity between countries by building better roads, bridges, ports, and communication networks.",
+            "Labor mobility between countries is essential for the free movement of workers, allowing for better allocation of skills and labor resources across regions.",
+            "Achieving scale economies through regional cooperation involves countries working together to increase efficiency and reduce costs in production and trade."
+        ],
     },
 
     2: {
@@ -62,6 +72,15 @@
             { word: "Marketing", startRow: 6, startCol: 11, direction: "down", clueNumber: 8 },
             { word: "Technology", startRow: 8, startCol: 3, direction: "down", clueNumber: 9 },
             { word: "Finance", startRow: 8, startCol: 5, direction: "down", clueNumber: 10 }
+        ],
+        notes: [
+            "This is an internal factor related to a company’s financial resources. It determines the ability of a business to fund operations, expansions, and investments.",
+            "This external factor is influenced by political events and policies, including government stability, political risk, and policy changes that may affect international business operations.",
+            "An internal factor related to a company’s technological capabilities, which plays a key role in maintaining competitiveness, innovation, and operational efficiency.",
+            "This external factor is shaped by cultural differences and norms, influencing international business through varying consumer preferences, communication styles, and workplace behavior.",
+            "An external factor influenced by economic conditions and trends such as inflation, interest rates, and exchange rates, which impact a company’s profitability and strategy.",
+            "An internal factor related to a company’s marketing strategies, including promotion, product placement, and market research that drives customer engagement and sales.",
+            "An internal factor related to a company’s management structure, which determines decision-making processes, leadership effectiveness, and operational efficiency."
         ],
 
     },
@@ -97,7 +116,16 @@
             { word: "MaximumUtilization", startRow: 4, startCol: 12, direction: "down", clueNumber: 8 },
             { word: "Space", startRow: 9, startCol: 6, direction: "down", clueNumber: 9 },
             { word: "Rail", startRow: 11, startCol: 8, direction: "down", clueNumber: 10 }
-        ]
+        ],
+        notes: [
+            "A mode of transport that uses tracks to guide vehicles, primarily used for bulk transport over land.",
+            "A type of road vehicle used for transporting goods, widely utilized for flexible and short distance deliveries.",
+            "The primary resource in a warehouse that is always in short supply, regardless of the warehouse’s size, essential for efficient inventory management.",
+            "A type of warehouse often associated with higher costs due to the need for more space to accommodate large inventories.",
+            "A potential issue that can occur in large warehouses when space is not utilized effectively, leading to inefficiencies in operations.",
+            "A disadvantage of small warehouses, which can force companies to think creatively about space utilization.",
+            "In small warehouses, maximizing utilization can lead to shorter travel times between locations and reduced loading / unloading times, increasing operational efficiency."
+        ],
     },
 
     4: {
@@ -130,7 +158,18 @@
             { word: "Intermediate", startRow: 6, startCol: 13, direction: "down", clueNumber: 8 },
             { word: "GlobalUniform", startRow: 7, startCol: 11, direction: "down", clueNumber: 9 },
             { word: "Licensing", startRow: 8, startCol: 17, direction: "down", clueNumber: 10 }
-        ]
+        ],
+        notes: [
+            "The process of marketing goods and services in multiple countries, requiring adaptation to different markets and environments.",
+            "The term for cultural differences and similarities between countries that must be understood to successfully market products internationally.",
+            "The process of adapting a product or service to fit the needs and preferences of a particular market, ensuring relevance and appeal.",
+            "A global marketing strategy that emphasizes consistency and standardization across different markets to maintain brand identity and efficiency.",
+            "The process of entering a foreign market by licensing a company’s products or technology to a local firm, allowing for local expertise and market entry",
+            "A pricing strategy that allows for local adjustments based on specific market conditions, including competition and customer demand.",
+            "A pricing strategy that balances global and local factors to create an effective pricing structure for multiple markets.",
+            "Various factors that influence pricing decisions, including costs, market conditions, competitor prices, and consumer behavior.",
+            "A pricing strategy that uses the same price globally, offering simplicity but possibly limiting flexibility in local markets."
+        ],
     },
 
     5: {
@@ -163,11 +202,28 @@
             { word: "BalanceTrade", startRow: 5, startCol: 10, direction: "down", clueNumber: 8 },
             { word: "Embargo", startRow: 6, startCol: 12, direction: "down", clueNumber: 9 },
             { word: "Subsidy", startRow: 11, startCol: 4, direction: "down", clueNumber: 10 }
-        ]
+        ],
+        notes: [
+            "A government order prohibiting the trade of a particular product or with a particular country.Embargoes are often used as a political tool to apply pressure on other nations.",
+            "A limit on the quantity of a product that can be imported or exported. Quotas are used to control the volume of trade and protect domestic industries from foreign competition.",
+            "An agreement between countries to reduce or eliminate trade barriers, such as tariffs or quotas, to encourage the free flow of goods and services.",
+            "The difference between a country’s exports and imports. A positive balance (trade surplus) occurs when exports exceed imports, while a negative balance(trade deficit) happens when imports exceed exports.",
+            "A government agency that collects taxes on imports and exports. Customs ensures compliance with laws and regulations related to trade.",
+            "Selling goods in a foreign market at a price below the cost of production. This practice is often used to gain market share in a new region but is controversial and can lead to trade disputess",
+            "The policy of protecting domestic industries from foreign competition through measures such as tariffs, quotas, or subsidies.",
+            "A method of transporting goods in standardized containers. Container shipping allows for efficient, cost - effective movement of goods over long distances, especially in international trade."
+        ],
     }
 };
 
-
+// Example notes for each set
+const notes = {
+    1: "Notes for Set 1: Regional Economic Development...",
+    2: "Notes for Set 2: Introduction to International Business...",
+    3: "Notes for Set 3: Introduction to Logistic Management...",
+    4: "Notes for Set 4: International Marketing...",
+    5: "This is an internal factor related to a company’s financial resources. It determines the ability of a business to fund operations, expansions, and investments.<br />2. This external factor is influenced by political events and policies, including government stability, political risk, and policy changes that may affect international business operations.<br />3. An internal factor related to a company’s technological capabilities, which plays a key role in maintaining competitiveness, innovation, and operational efficiency.<br />4. This external factor is shaped by cultural differences and norms, influencing international business through varying consumer preferences, communication styles, and workplace behavior.<br />5. An external factor influenced by economic conditions and trends such as inflation, interest rates, and exchange rates, which impact a company’s profitability and strategy.<br />6. An internal factor related to a company’s marketing strategies, including promotion, product placement, and market research that drives customer engagement and sales.<br />7. An internal factor related to a company’s management structure, which determines decision-making processes, leadership effectiveness, and operational efficiency."
+};
 
 let timeElapsed = 0;
 let timerInterval;
@@ -278,6 +334,27 @@ function populateClues(set) {
     });
 }
 
+function populateNotes(set) {
+    const notesSection = document.getElementById('notes-section');
+
+    // Clear existing paragraphs but keep the heading
+    const existingParagraphs = notesSection.getElementsByTagName('p');
+    while (existingParagraphs.length > 0) {
+        notesSection.removeChild(existingParagraphs[0]);
+    }
+
+    // Populate new notes
+    set.notes.forEach(note => {
+        notesSection.innerHTML += `<p>${note}</p>`;
+    });
+}
+
+
+// Function to update the notes section
+function updateNotes(setNumber) {
+    const notesSection = document.getElementById('notes-section').querySelector('p');
+    notesSection.innerHTML = notes[setNumber] || "No notes available for this set.";
+}
 function createGrid() {
     console.log("Creating grid for:", currentSet.title);
     const grid = document.getElementById("crossword-grid");
@@ -337,33 +414,34 @@ function createGrid() {
 }
 
 
-document.getElementById("start-btn").addEventListener("click", function () {
-    document.getElementById("start-screen").style.display = "none";
-    document.getElementById("level-selection").style.display = "block";
-});
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("start-btn").addEventListener("click", function () {
+        document.getElementById("start-screen").style.display = "none";
+        document.getElementById("level-selection").style.display = "block";
+    });
 
-document.querySelectorAll('.level-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        currentSet = crosswordSets[this.getAttribute('data-set')]; // Set the current set based on button clicked
+    document.querySelectorAll('.level-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const setNumber = this.getAttribute('data-set'); // Get the set number
+            currentSet = crosswordSets[setNumber]; // Set the current set based on button clicked
 
-        console.log("Current Set Loaded:", currentSet.title); // Debugging output
-        console.log("Words in Current Set:", currentSet.words); // Debugging output
-        console.log("Grid Dimensions:", currentSet.gridDimensions); // Debugging output
+            console.log("Current Set Loaded:", currentSet.title); // Debugging output
 
-        document.getElementById('level-selection').style.display = 'none';
-        document.getElementById('crossword-container').style.display = 'block';
-        document.getElementById('crossword-title').innerText = currentSet.title;
+            document.getElementById('level-selection').style.display = 'none';
+            document.getElementById('crossword-container').style.display = 'block';
+            document.getElementById('crossword-title').innerText = currentSet.title;
 
-        // Ensure clues are populated correctly
-        populateClues(currentSet);
-        createGrid(); // This should create the grid
+            // Ensure clues are populated correctly
+            populateClues(currentSet);
+            populateNotes(currentSet); // Populate notes for the current set
+            createGrid(); // This should create the grid
 
-        // Reset timer and score
-        timeElapsed = 0;
-        score = 0;
-        document.getElementById("score").innerText = "Score: 0";
-        startTimer(); // Start the timer
+            // Reset timer and score
+            timeElapsed = 0;
+            score = 0;
+            document.getElementById("score").innerText = "Score: 0";
+            startTimer(); // Start the timer
+        });
     });
 });
-
 

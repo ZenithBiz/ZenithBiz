@@ -13,7 +13,8 @@
 }
 
 #game-container {
-    max-width: 800px;
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -39,6 +40,8 @@ h1 {
     gap: 0px; /* Space between the cells */
     max-width: 1200px; /* Maximum width for responsiveness */
     margin: 0 auto; /* Center the grid */
+    overflow: auto;
+   margin:20px auto;
 }
 
     #crossword-grid input {
@@ -54,13 +57,14 @@ h1 {
     flex-direction: column;
     align-items: flex-start; /* Align the whole container to the left */
     margin-left: 20px; /* Optional: Add some margin to push the content a bit from the left edge */
-    padding-top: 200px; /* Adjust this value based on the height of the status bar */
+    padding-top: 300px; /* Adjust this value based on the height of the status bar */
 }
 
 
 /* Sticky status bar for timer and score */
 #status-bar {
     display: flex;
+    font-size: 1.2em;
     justify-content: space-between;
     width: 100%;
     padding: 10px;
@@ -69,19 +73,22 @@ h1 {
     border-bottom: 2px solid #ccc; /* Optional: Add a border for separation */
     position: sticky; /* Make the status bar sticky */
     top: 40px; /* Adjust this value based on your layout (e.g., height of title) */
-    z-index: 10; /* Ensure it stays on top */
+    z-index: 1; /* Ensure it stays on top */
 }
 
 
 #crossword-grid {
     display: grid;
-    max-width: 100%; /* Ensure responsiveness */
     margin-bottom: 20px; /* Space below the grid */
+    width: 65%;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* Create flexible columns */
+    gap: 0;
+    height: 65vh; /* PADAM KALAU XNAK SCROLL */
+    max-height: 600px; /* PADAM KALAU XNAK SCROLL */
 }
 
     #crossword-grid input {
         width: 100%;
-        height: 40px;
         font-size: 20px;
         text-align: center;
         border: 1px solid #ccc;
@@ -122,6 +129,46 @@ h1 {
 /* Optional: Style list items to ensure proper spacing */
 #across-clues ul li, #down-clues ul li {
     margin-bottom: 5px; /* Add space between each clue */
+}
+
+/* Container for crossword and notes side by side */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+
+
+/* Style for the notes section (right column) */
+#notes-section {
+    margin-top: 20px;
+    width: 30%; /* Adjust width as needed */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Adjust the clue container to take full width below both crossword and notes */
+#crossword-clue-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Mobile responsiveness: Stack crossword and notes vertically */
+@media screen and (max-width: 768px) {
+    #main-content {
+        flex-direction: column;
+    }
+
+    #crossword-grid, #notes-section {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between stacked elements */
+    }
 }
 
 
